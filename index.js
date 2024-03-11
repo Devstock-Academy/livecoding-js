@@ -28,20 +28,20 @@ console.log(`Po postdekrementacji: ${liczba2}`) // Po postdekrementacji: 4
 --liczba2
 console.log(`Po predekrementacji: ${liczba2}`) // Po predekrementacji: 3
 
-let liczba3 = 10
-let dzielnik = 3
-let reszta = liczba3 % dzielnik
+const liczba3 = 10
+const dzielnik = 3
+const reszta = liczba3 % dzielnik
 console.log(`Reszta z dzielenia ${liczba3} przez ${dzielnik} wynosi: ${reszta}`) // Reszta
 
 // Zakładamy, że start i koniec są liczbami od 1 do 7, reprezentującymi dni tygodnia
-let start = 1 // Poniedziałek
-let koniec = 5 // Piątek
+const start = 1 // Poniedziałek
+const koniec = 5 // Piątek
 
 // Obliczamy różnicę dni między startem a końcem, +1 aby włączyć dzień końcowy w liczenie
-let roznicaDni = koniec - start + 1
+const roznicaDni = koniec - start + 1
 
 // Korygujemy różnicę dni o weekendy. Jeśli start lub koniec wpada na weekend, korygujemy liczbę dni.
-let dniRobocze =
+const dniRobocze =
   roznicaDni - (start > 5 ? start - 5 : 0) - (koniec > 5 ? koniec - 5 : 0)
 
 console.log(`Liczba dni roboczych: ${dniRobocze}`)
